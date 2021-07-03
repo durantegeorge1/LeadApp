@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataTransferObjects\" />
+    <None Remove="Enums\" />
+    <None Remove="Models\" />
+    <None Remove="Constants\" />
+    <None Remove="CommandLineParser" />
+    <None Remove="CommandLineArguments\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataTransferObjects\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Models\" />
+    <Folder Include="Constants\" />
+    <Folder Include="CommandLineArguments\" />
+  </ItemGroup>
+</Project>

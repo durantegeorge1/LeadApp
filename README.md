@@ -8,12 +8,12 @@ To deploy the conosle app. Open a command line interface. Go to the LeadApp.CLI 
 
 ### Run
 To run the console app. (See Deploy). Open a command line interface. Go to the output folder where LeadApp.CLI is deployed and run the following command:
-`dotnet LeadApp.CLI [-f <PATH_TO_LEAD_FILE>] [-p <SORT_TYPE>] [-e <ADDITIONAL_SORT_TYPES>]`
+`dotnet LeadApp.CLI.dll [-f <PATH_TO_LEAD_FILE>] [-p <SORT_TYPE>] [-e <ADDITIONAL_SORT_TYPES>]`
 
 **Examples**  
-`dotnet LeadApp.CLI -f TestFiles/Pipe.txt -p PropertyTypeAsc -e ProjectAsc`  
-`dotnet LeadApp.CLI -f TestFiles/Comma.txt -p StartDateAsc`  
-`dotnet LeadApp.CLI -f TestFiles/Spaces.txt -p LastNameDesc`  
+`dotnet LeadApp.CLI.dll -f TestFiles/Pipe.txt -p PropertyTypeAsc -e ProjectAsc`  
+`dotnet LeadApp.CLI.dll -f TestFiles/Comma.txt -p StartDateAsc`  
+`dotnet LeadApp.CLI.dll -f TestFiles/Spaces.txt -p LastNameDesc`  
 
 All sample files can be found in the TestFiles directory of the output directory
 
@@ -25,7 +25,7 @@ To deploy the Web API. Open a command line interface. Go to the LeadApp.API dire
 
 ### Run
 To run the Web API. (See Deploy) Open a command line interface. Go to the output folder where LeadApp.API is deployed and run the following command:  
-`dotnet LeadApp.API` 
+`dotnet LeadApp.API.dll` 
 
 Open a web browser and navigate to https://localhost:5001/swagger/index.html
 

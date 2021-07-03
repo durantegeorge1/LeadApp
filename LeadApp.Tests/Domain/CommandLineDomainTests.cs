@@ -23,7 +23,7 @@ namespace LeadApp.Tests.Domain
                 ExtendedSortTypeList = new List<string>() { "FirstNameDesc" }
             };
             Mock<ICommandLineService> mockCommandLineService = new();
-            mockCommandLineService.Setup(cls => cls.ParseArugments<LeadProcessorOptions>(It.IsAny<string[]>())).Returns(new LeadProcessorOptions());
+            mockCommandLineService.Setup(cls => cls.ParseArugments<LeadProcessorOptions>(It.IsAny<string[]>())).Returns(options);
             var sut = new CommandLineDomain(mockCommandLineService.Object);
 
             //act

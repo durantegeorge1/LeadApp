@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="FileService\" />
+    <None Remove="FileService\Interface\" />
+    <None Remove="HttpClientService\" />
+    <None Remove="HttpClientService\Interfaces\" />
+    <None Remove="Microsoft.Extensions.Http" />
+    <None Remove="CommandLineParser\" />
+    <None Remove="CommandLineParser" />
+    <None Remove="CommandLineService\Interfaces\" />
+    <None Remove="CommandLineService\CommandLineOptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileService\" />
+    <Folder Include="FileService\Interfaces\" />
+    <Folder Include="HttpClientService\" />
+    <Folder Include="HttpClientService\Interfaces\" />
+    <Folder Include="CommandLineService\" />
+    <Folder Include="CommandLineService\Interfaces\" />
+    <Folder Include="CommandLineService\CommandLineOptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeadApp.Objects\LeadApp.Objects.csproj" />
+  </ItemGroup>
+</Project>

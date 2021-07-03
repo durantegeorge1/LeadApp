@@ -1,0 +1,4 @@
+﻿Doe|John|House|Paint|6/30/2021|+14045551234
+Smith|John|House|Lawncare|6/30/2021|+14045551234
+Doe|Jane|Condo|Plumbing|2021-07-01|+14045551235
+Bar|Foo|Trailer|Roof|2021-07-02|+17705551234

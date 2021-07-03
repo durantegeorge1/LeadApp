@@ -63,7 +63,10 @@ namespace LeadApp.API.Controllers
         /// <summary>
         /// Get leads sorted by property type
         /// </summary>
-        /// <param name="sort"></param>
+        /// <remarks>
+        /// Sample request: /Lead/propertyType/asc
+        /// </remarks>
+        /// <param name="sort">Direction of sorting (asc | desc)</param>
         /// <returns>A sorted list of Leads</returns>
         [HttpGet("propertyType/{sort}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Lead>))]
@@ -85,7 +88,10 @@ namespace LeadApp.API.Controllers
         /// <summary>
         /// Get leads sorted by start date
         /// </summary>
-        /// <param name="sort"></param>
+        /// <remarks>
+        /// Sample request: /Lead/startDate/asc
+        /// </remarks>
+        /// <param name="sort">Direction of sorting (asc | desc)</param>
         /// <returns>A sorted list of Leads</returns>
         [HttpGet("startDate/{sort}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Lead>))]
@@ -107,7 +113,10 @@ namespace LeadApp.API.Controllers
         /// <summary>
         /// Get leads sorted by project
         /// </summary>
-        /// <param name="sort"></param>
+        /// <remarks>
+        /// Sample request: /Lead/project/asc
+        /// </remarks>
+        /// <param name="sort">Direction of sorting (asc | desc)</param>
         /// <returns>A sorted list of leads</returns>
         [HttpGet("project/{sort}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Lead>))]
@@ -150,6 +159,10 @@ namespace LeadApp.API.Controllers
 
         private void LoadData()
         {
+            if(Leads.Count > 0)
+            {
+                return;
+            }
             Leads.AddRange(new List<LeadDTO>()
             {
                 new()

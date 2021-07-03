@@ -7,7 +7,7 @@ To deploy the conosle app. Open a command line interface. Go to the LeadApp.CLI 
 `dotnet publish --configuration Release --output <OUTPUT_DIRECTORY>`
 
 ### Run
-To run the console app. (See Deploy). Open a command line interface. Go to the output folder where LeadApp.CLI is deployed and run the following command:
+To run the console app. (See Deploy). Open a command line interface. Go to the output folder where LeadApp.CLI is deployed and run the following command:  
 `dotnet LeadApp.CLI.dll [-f <PATH_TO_LEAD_FILE>] [-p <SORT_TYPE>] [-e <ADDITIONAL_SORT_TYPES>]`
 
 **Examples**  

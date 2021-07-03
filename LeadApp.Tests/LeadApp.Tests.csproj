@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeadApp.API\LeadApp.API.csproj" />
+    <ProjectReference Include="..\LeadApp.CLI\LeadApp.CLI.csproj" />
+    <ProjectReference Include="..\LeadApp.Core\LeadApp.Core.csproj" />
+    <ProjectReference Include="..\LeadApp.Domain\LeadApp.Domain.csproj" />
+    <ProjectReference Include="..\LeadApp.Objects\LeadApp.Objects.csproj" />
+    <ProjectReference Include="..\LeadApp.Services\LeadApp.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="API\" />
+    <None Remove="CLI\" />
+    <None Remove="Core\" />
+    <None Remove="Domain\" />
+    <None Remove="Services\" />
+    <None Remove="Moq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\" />
+    <Folder Include="CLI\" />
+    <Folder Include="Core\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+</Project>

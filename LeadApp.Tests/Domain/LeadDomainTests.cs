@@ -114,11 +114,11 @@ namespace LeadApp.Tests.Domain
             //assert
             Assert.IsInstanceOfType(result, typeof(LeadDTO));
             Assert.AreEqual("Doe", result.LastName);
-            Assert.AreEqual("John", result.LastName);
-            Assert.AreEqual("House", result.LastName);
-            Assert.AreEqual("Paint", result.LastName);
-            Assert.AreEqual("07/01/2021", result.LastName);
-            Assert.AreEqual("+14045551234", result.LastName);
+            Assert.AreEqual("John", result.FirstName);
+            Assert.AreEqual(PropertyType.House, result.PropertyType);
+            Assert.AreEqual("Paint", result.Project);
+            Assert.AreEqual(DateTime.Parse("07/01/2021"), result.StartDate);
+            Assert.AreEqual("+14045551234", result.Phone);
         }
 
         [DataTestMethod]
